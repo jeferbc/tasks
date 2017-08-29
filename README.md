@@ -1,24 +1,31 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project allow to users to list, create, update, delete tasks.
 
-Things you may want to cover:
+## How it Works
 
-* Ruby version
+This project has a unique table called todos, this table store ID, name, description, created_at, updated_at. We got a todos controller with every resources to CRUD a todo. The views has developed usign bootstrap.
 
-* System dependencies
+## Setup
+This is a Rails 5 project that uses PostgreSQL as the database. Once you have that installed, download the project by cloning it from Git:
+```
+$ git clone git@github.com:jeferbc/tasks.git
+```
+Then, install the dependencies with:
 
-* Configuration
+```
+$ bundle
+```
 
-* Database creation
+Create the database and run the migrations by executing:
 
-* Database initialization
+```
+$ rails db:create
+$ rails db:schema:load
+```
 
-* How to run the test suite
+You can seed the database running:
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+$ rails db:seed
+```
